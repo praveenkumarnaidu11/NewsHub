@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# 📰 NewsHub
 
-## Project info
+**NewsHub** is a fully responsive, modern, and fast frontend-only React News Aggregator application built using **React.js with TypeScript**, **Tailwind CSS**, and **NewsAPI**. It allows users to browse top headlines by category, search for news, and save their favorite articles — all without a backend!
 
-**URL**: https://lovable.dev/projects/a53eed2f-36b3-4e77-b49a-6d9864bb54ea
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### ✅ Top Headlines by Category
+- View top headlines from multiple categories:
+  - General
+  - Technology
+  - Business
+  - Sports
+  - Entertainment
+- Uses `https://newsapi.org/v2/top-headlines` endpoint.
 
-**Use Lovable**
+### 🔍 Search News by Keyword
+- Search for news articles using custom keywords.
+- Powered by `https://newsapi.org/v2/everything?q=your-query`.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a53eed2f-36b3-4e77-b49a-6d9864bb54ea) and start prompting.
+### 💖 Favorites System
+- Click on the ❤️ icon to save or unsave articles.
+- Favorite articles are stored in `localStorage`.
+- A dedicated `/favorites` page displays saved articles.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 📄 Responsive News Cards
+- Each card shows:
+  - Article image
+  - Title
+  - Short description (3 lines)
+  - Publish date
+  - “Read More” button (opens in a new tab)
 
-**Use your preferred IDE**
+### 🔁 Routing with React Router
+- `/` → Home (Top Headlines by Category)
+- `/search` → News search results
+- `/favorites` → Saved favorite articles
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🧠 State Management
+- Context API to manage favorite articles
+- Favorites persist using `localStorage`
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🔐 API Key Security
+- API key is stored in `.env` file as `REACT_APP_NEWS_API_KEY`
 
-Follow these steps:
+### ⚙️ Error Handling & Load States
+- Shows loading spinner while fetching
+- Error message if API fails
+- Message when no articles found
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 📱 Fully Responsive UI
+- Works perfectly on mobile, tablet, and desktop
+- Built with Tailwind CSS
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠 Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+- React.js (with TypeScript)
 - Tailwind CSS
+- Axios
+- React Router DOM
+- Context API + localStorage
+- NewsAPI (https://newsapi.org)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/a53eed2f-36b3-4e77-b49a-6d9864bb54ea) and click on Share -> Publish.
+## Project SetUp Guide 
 
-## Can I connect a custom domain to my Lovable project?
+- Clone the repositry
+- Change directory to NewsHub
+- Open terminal and run "npm install" 
+- To start the project type "npm run dev" in terminal and run
+- Click on the link on the terminal to show the project output
 
-Yes, you can!
+  ## ScreenShots
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+  
+<img width="1366" height="768" alt="Screenshot 2025-07-16 105557" src="https://github.com/user-attachments/assets/e4d9f545-b772-43d6-86cb-e7029994d64f" />
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9c0e2b81-58c2-4f89-9321-e1b3e6d3a409" />
+
